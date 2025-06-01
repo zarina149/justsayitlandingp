@@ -1,63 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Just Say It</title>
-<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-<style>
-.bg-terracotta { background-color: #E2725B; }
-.text-terracotta { color: #E2725B; }
-</style>
-</head>
-<body class="bg-gray-50 text-gray-800 font-sans">
-<section class="min-h-screen flex flex-col items-center justify-center px-6 py-16 bg-terracotta relative">
-<h1 class="text-4xl font-bold mb-4 text-white">JUST SAY IT</h1>
-<p class="text-xl mb-2 text-white">Voice-led journaling for people too busy to reflect but too smart not to.</p>
-<p class="text-sm text-white mb-8">We remember your thoughts. We reflect them. We gently force you into clarity.</p>
-<a href="#signup" class="bg-white hover:bg-gray-100 text-terracotta py-3 px-6 rounded-full text-lg font-semibold">Get Early Access</a>
-</section>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Just Say It</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+      .bg-terracotta { background-color: #E2725B; }
+      .text-terracotta { color: #E2725B; }
+      .confetti {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        pointer-events: none;
+        z-index: 9999;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50 text-gray-800 font-sans">
+    <section class="min-h-screen flex flex-col items-center justify-center px-6 py-16 bg-terracotta relative">
+      <h1 class="text-4xl font-bold mb-4 text-white">JUST SAY IT</h1>
+      <p class="text-xl mb-2 text-white">Voice-led journaling for people too busy to reflect but too smart not to.</p>
+      <p class="text-sm text-white mb-8">We remember your thoughts. We reflect them. We gently force you into clarity.</p>
+      <a href="#signup" class="bg-white hover:bg-gray-100 text-terracotta py-3 px-6 rounded-full text-lg font-semibold">Get Early Access</a>
+    </section>
 
-<section class="px-6 py-16 bg-orange-50 text-center">
-<h2 class="text-3xl font-bold mb-6 text-terracotta">Why You're a Glorious Mess</h2>
-<p class="max-w-2xl mx-auto text-gray-700">You have brilliant insights. But you forget them while brushing your teeth. Your brain is a haunted house of genius and avoidance. We're here to organize the chaos with voice, sarcasm, and emotional accuracy.</p>
-</section>
+    <section class="px-6 py-16 bg-orange-50 text-center">
+      <h2 class="text-3xl font-bold mb-6 text-terracotta">Why You're a Glorious Mess</h2>
+      <p class="max-w-2xl mx-auto text-gray-700">You have brilliant insights. But you forget them while brushing your teeth. Your brain is a haunted house of genius and avoidance. We're here to organize the chaos with voice, sarcasm, and emotional accuracy.</p>
+    </section>
 
-<section class="px-6 py-16 text-center bg-white">
-<h2 class="text-3xl font-bold mb-6 text-terracotta">How We Fix You (Kind Of)</h2>
-<div class="max-w-2xl mx-auto text-gray-700 space-y-4">
-<p>✦ Speak your thoughts—no typing, no shame</p>
-<p>✦ AI summarizes your emotional rambling into insights</p>
-<p>✦ Tone options: calm, coaching, or delightfully rude</p>
-<p>✦ Get roasted or reassured—your choice</p>
-</div>
-</section>
+    <section class="px-6 py-16 text-center bg-white">
+      <h2 class="text-3xl font-bold mb-6 text-terracotta">How We Fix You (Kind Of)</h2>
+      <div class="max-w-2xl mx-auto text-gray-700 space-y-4">
+        <p>✦ Speak your thoughts—no typing, no shame</p>
+        <p>✦ AI summarizes your emotional rambling into insights</p>
+        <p>✦ Tone options: calm, coaching, or delightfully rude</p>
+        <p>✦ Get roasted or reassured—your choice</p>
+      </div>
+    </section>
 
-<section class="px-6 py-16 bg-orange-100 text-center">
-<h2 class="text-3xl font-bold mb-6 text-terracotta">Fake Demo Zone</h2>
-<div class="bg-white p-6 rounded-xl inline-block shadow">
-<p class="italic">You: I don’t know if I’m overwhelmed or just lazy.</p>
-<p class="italic text-terracotta">App: Good news. You’re probably both. Let’s unpack it.</p>
-</div>
-<p class="text-sm text-gray-500 mt-4">Imagine this as audio. With judgmental tone.</p>
-</section>
+    <section class="px-6 py-16 bg-orange-100 text-center">
+      <h2 class="text-3xl font-bold mb-6 text-terracotta">Fake Demo Zone</h2>
+      <div class="bg-white p-6 rounded-xl inline-block shadow">
+        <p class="italic">You: I don’t know if I’m overwhelmed or just lazy.</p>
+        <p class="italic text-terracotta">App: Good news. You’re probably both. Let’s unpack it.</p>
+      </div>
+      <p class="text-sm text-gray-500 mt-4">Imagine this as audio. With judgmental tone.</p>
+    </section>
 
-<section class="px-6 py-16 text-center bg-white">
-<h2 class="text-3xl font-bold mb-6 text-terracotta">People (Allegedly) Love It</h2>
-<div class="max-w-2xl mx-auto text-gray-700 space-y-4">
-<p>"It’s like therapy but with fewer tissues and more truth." – Dani</p>
-<p>"I screamed, then I reflected. 10/10." – Tom</p>
-<p>"It called me out in the nicest way possible." – Lia</p>
-</div>
-</section>
+    <section class="px-6 py-16 text-center bg-white">
+      <h2 class="text-3xl font-bold mb-6 text-terracotta">People (Allegedly) Love It</h2>
+      <div class="max-w-2xl mx-auto text-gray-700 space-y-4">
+        <p>"It’s like therapy but with fewer tissues and more truth." – Dani</p>
+        <p>"I screamed, then I reflected. 10/10." – Tom</p>
+        <p>"It called me out in the nicest way possible." – Lia</p>
+      </div>
+    </section>
 
-<section id="signup" class="px-6 py-16 bg-orange-50 text-center">
-<h2 class="text-3xl font-bold mb-4 text-terracotta">Ready to be Emotionally Bullied Into Growth?</h2>
-<p class="mb-6 text-gray-700">Drop your email. We’ll take it from here.</p>
-<form class="flex flex-col items-center space-y-4">
-<input type="email" placeholder="Your email" class="px-4 py-2 rounded border border-gray-300 w-64" />
-<button class="bg-terracotta hover:bg-red-400 text-white py-2 px-6 rounded-full">Get Early Access</button>
-</form>
-</section>
-</body>
+    <section id="signup" class="px-6 py-16 bg-orange-50 text-center">
+      <h2 class="text-3xl font-bold mb-4 text-terracotta">Ready to be Emotionally Bullied Into Growth?</h2>
+      <p class="mb-6 text-gray-700">Drop your email. We’ll take it from here.</p>
+      <form name="early-access" method="POST" data-netlify="true" action="/?success=true" class="flex flex-col items-center space-y-4">
+        <input type="hidden" name="form-name" value="early-access" />
+        <input type="email" name="email" placeholder="Your email" class="px-4 py-2 rounded border border-gray-300 w-64" required />
+        <button type="submit" class="bg-terracotta hover:bg-red-400 text-white py-2 px-6 rounded-full">Get Early Access</button>
+        <p class="text-green-600 hidden" id="successMessage">Thanks for signing up. See you in your inbox soon, you glorious mess.</p>
+      </form>
+      <canvas id="confettiCanvas" class="confetti hidden"></canvas>
+      <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+      <script>
+        if (window.location.search.includes('success=true')) {
+          const msg = document.getElementById('successMessage');
+          const confettiCanvas = document.getElementById('confettiCanvas');
+          if (msg && confettiCanvas) {
+            msg.classList.remove('hidden');
+            confettiCanvas.classList.remove('hidden');
+            const myConfetti = confetti.create(confettiCanvas, { resize: true });
+            myConfetti({
+              particleCount: 150,
+              spread: 70,
+              origin: { y: 0.6 },
+            });
+          }
+        }
+      </script>
+    </section>
+  </body>
 </html>
